@@ -23,7 +23,7 @@ int main() {
     char src2 [] = "there";
     unsigned int size;
 
-    size = 4;
+    size = 3;
 
     printf("%lu\n", strlcpy(dest, src, size));
     printf("%u\n", ft_strlcpy(dest2, src2, size));

@@ -14,15 +14,8 @@ int main () {
     char s1 [] = "im same";
     char s2 [] = "im not same";
     int n;
-    int i;
 
-    i = 0;
-    n = strlen(s1);
-    while (i < n) {
-    printf("For %d\n", i);
+    n = 6;
     printf("%d\n", strncmp(s1, s2, n));
     printf("%d\n", ft_strncmp(s1, s2, n));
-    i++;
-    }
-
 }
