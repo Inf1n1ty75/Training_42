@@ -22,7 +22,6 @@ int ft_check_base(int nbr, char *base) {
     int base_len;
 
     i = 0;
-    j = 1;
     base_len = ft_strlen(base);
 
     if (base_len <= 1 || base[i] == '\0')
@@ -34,8 +33,12 @@ int ft_check_base(int nbr, char *base) {
     }
     i = 0;
     while (base[i]) {
-        if (base[i] == base[j + i])
+        j = i + 1;
+        while (base[j]) {
+        if (base[i] == base[j])
         return 1;
+        j++;
+        }
         i++;
     }
     return 0;
